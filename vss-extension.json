@@ -1,0 +1,36 @@
+{
+    "manifestVersion": 1,
+    "id": "tfsec-task",
+    "name": "tfsec for Terraform",
+    "version": "0.0.1",
+    "publisher": "rimodi",
+    "targets": [
+        {
+            "id": "Microsoft.VisualStudio.Services"
+        }
+    ],    
+    "description": "Security static code analyzer (TfSec) for Terraform",
+    "categories": [
+        "Azure Pipelines"
+    ],
+    "icons": {
+        "default": "images/extension-icon.png"        
+    },
+    "files": [
+        {
+            "path": "tfsec"
+        }
+    ],
+    "contributions": [
+        {
+            "id": "custom-build-release-task",
+            "type": "ms.vss-distributed-task.task",
+            "targets": [
+                "ms.vss-distributed-task.tasks"
+            ],
+            "properties": {
+                "name": "tfsec"
+            }
+        }
+    ]
+}
