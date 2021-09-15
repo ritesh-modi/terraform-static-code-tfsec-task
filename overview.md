@@ -11,14 +11,14 @@ Supported features:
 
 
 ### 1. Install the below Task in your azure devops org:
-- Name: tfsec
+- Name: terraformstaticcodeanalyzer
 - Publisher: rimodi
 
 
 
 ### 2. Select tfsec and use the task .
 ```
-- task: tfsec@1
+- task: terraformstaticcodeanalyzer@1
   inputs:
     tfsecversion: '0.58.6'
 ```
@@ -42,7 +42,7 @@ stages:
   jobs:
   - job: terraform_plan
     steps:
-    - task: tfsec@1
+    - task: terraformstaticcodeanalyzer@1
       inputs:
         tfsecversion: '0.58.6'
 
@@ -69,7 +69,7 @@ stages:
   jobs:
   - job: terraform_plan
     steps:
-    - task: tfsec@1
+    - task: terraformstaticcodeanalyzer@1
       inputs:
         tfsecversion: '0.58.6'
 

@@ -1,15 +1,28 @@
 {
     "manifestVersion": 1,
     "id": "tfsec-task",
-    "name": "tfsec for Terraform",
+    "name": "Terraform Static code Analyzer",
     "version": "0.0.1",
     "publisher": "rimodi",
+    "public": true,
+    "repository": {
+        "type": "git",
+        "uri": "https://github.com/ritesh-modi/terraform-static-code-tfsec-task"
+    },
     "targets": [
         {
             "id": "Microsoft.VisualStudio.Services"
         }
     ],    
     "description": "Security static code analyzer (TfSec) for Terraform",
+    "content": {
+        "details": {
+            "path": "overview.md"
+        },
+        "license": {
+            "path": "LICENSE"
+        }
+    },
     "categories": [
         "Azure Pipelines"
     ],
@@ -20,6 +33,14 @@
         {
             "path": "tfsec"
         }
+    ],
+    "tags": [
+        "Terraform",
+        "TFsec",
+        "static Code analyzer",
+        "Build pipeline",
+        "release pipeline",
+        "security"
     ],
     "contributions": [
         {

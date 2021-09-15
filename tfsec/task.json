@@ -1,7 +1,7 @@
 {
     "$schema": "https://raw.githubusercontent.com/Microsoft/azure-pipelines-task-lib/master/tasks.schema.json",
     "id": "06a9d817-1011-4a16-bfaf-7977840e7e6d",
-    "name": "tfsec",
+    "name": "terraformstaticcodeanalyzer",
     "friendlyName": "Terraform static code analyzer",
     "description": "Static code security analyzer for Terraform scripts",
     "helpMarkDown": "",
